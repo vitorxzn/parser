@@ -1,4 +1,4 @@
-$paths = Get-Content -Path .\paths.txt | ForEach-Object {
+$paths = Get-Content -Path .\*.txt | ForEach-Object {
     $parts = $_ -split "`t"
     if ($parts.Count -ge 2) {
         $parts[1]
